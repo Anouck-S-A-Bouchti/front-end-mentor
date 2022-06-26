@@ -1,0 +1,143 @@
+head{
+    display: none;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+
+  overflow: hidden;
+  display: flex;
+  height: 100vh;
+  overflow: auto;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "lexend Deca",sans-serif;
+  font-size: 15px;
+  
+
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+    
+}
+
+article{
+    
+  max-width: 278px;
+  height: 400px;
+  position: relative;
+  padding: 42px;
+}
+
+article.sedan{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 7px 0px 0px 7px;
+}
+
+article.suv{
+  background-color: hsl(184, 100%, 22%);
+    
+}
+
+article.lux{
+  background-color:hsl(179, 100%, 13%);
+  border-radius: 0px 7px 7px 0px;
+}
+
+img{
+  margin-bottom: 36px;
+}
+
+h1{
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: lightgray;
+  margin-bottom: 36px;
+    
+}
+article p{
+    color:  hsla(0, 0%, 100%, 0.75);
+    line-height: 24px;
+    font-size: 0.77rem;
+}
+
+button {
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  padding: 14px;
+  width: 146px;
+  outline: none;
+  border: 2px solid hsl(0, 0%, 95%);
+  font-family: inherit;
+  transition: all 0.2s ease-in-out;
+  bottom: 42px;
+}
+
+.sedan button{
+  background-color: var(--neu-gray);
+  color: var(--prim-cyan);
+  border-radius: 25px;
+}
+
+.suv button {
+    background-color: var(--neu-gray);
+    color: var(--prim-cyan);
+    border-radius: 25px;
+  }
+  
+  .lux button {
+    background-color: var(--neu-gray);
+    color: var(--prim-dark-cyan);
+    border-radius: 25px;
+  }
+  
+  button:hover {
+  
+    color: var(--neu-gray);
+    border: 2px solid hsl(0, 0%, 0%);
+    background-color: aliceblue;
+  }
+  
+  button:active {
+    
+    transform: scale(0.5);
+    background-color: aliceblue;
+  }
+  
+  /* style footer */
+  
+  .attribution {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    color: var(--gray);
+    bottom: 10px;
+    font-size: 0.75rem;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+.attribution a {
+    text-decoration: none;
+    color: var(--dark-gray);
+  }
+  
+.attribution a:hover {
+    color: var(--black);
+  } 
